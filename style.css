@@ -16,7 +16,8 @@ ul li a{
 
 div img{
     display: block;
-    width: 100%;
+    width: 90%;
+    max-height: 550px;
 }
 
 .flex-container{
@@ -27,8 +28,17 @@ div img{
     min-width: 320px;
 }
 
+.aviso{
+    background-color: #F2CA50;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
 header{
-    background-color: #122a57;
+    background-color:#04ADBF;
     height: 100px;
     display: flex;
     align-items: center;
@@ -44,7 +54,7 @@ header .list-items{
 }
 
 .list-items li a{
-    color: #fff
+    color: #fff;
 }
 
 
@@ -52,8 +62,26 @@ header .menu{
     justify-content: space-between;
 }
 
+.contatos{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itens-contatos{
+    display: flex;
+    font-size: 12px;
+}
+
+.itens-contatos a{
+    text-decoration: none;
+    color: black
+}
+
 .apresentacao{
-    height: 100vh;
+    height: 85vh;
     align-items: center;
     justify-content: space-between;
 }
@@ -63,13 +91,13 @@ header .menu{
 }
 
 .texto-apresentacao h1{
-    color:#122a57;
+    color: #04ADBF;
     font-size: 48px;
     margin-bottom: 10px;
 }
 
 .btn{
-    background-color: #122a57;
+    background-color: #F2913D;
     color: #fff;
     text-align: center;
     border-radius: 30px;
@@ -86,11 +114,12 @@ header .menu{
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 35px;
 }
 
 #quem-somos h2{
     font-size: 32px;
-    color: #122a57;
+    color: #04ADBF;
     display: flex;
     margin-bottom: 20px;
 }
@@ -100,13 +129,15 @@ header .menu{
     height: 50px;
     width: 5px;
     margin-right: 5px;
-    background-color: #122a57;
+    background-color: #04ADBF;
     position: relative;
 }
 
 #quem-somos p{
     margin-bottom: 10px;
-    width: 90%;
+    max-width: 600px;
+    width: 100%;
+    text-align: justify;
 }
 
 #quem-somos img{
@@ -114,20 +145,20 @@ header .menu{
 }
 
 .container-externo{
-    background-color: #122a57;
+    background-color: #F2913D;
     width: 100%;
 }
 
 #servicos{
     flex-direction: column;
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 #servicos h2{
     color: #fff;
     font-size: 32px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 
 .list-servicos{
@@ -141,14 +172,14 @@ header .menu{
 
 .item-servico a{
     width: 220px;
-    background-color: #fff;
+    background-color: #04ADBF;
     border-radius: 30px;
     height: 50px;
     text-align: center;
     margin-top: 20px;
     line-height: 50px;
     padding: 5px 10px;
-    color: #122a57;
+    color: #fff;
     font-size: 12px;
     text-decoration: none;
     font-weight: 700;
@@ -168,8 +199,8 @@ header .menu{
 
 #planos{
     flex-direction: column;
-    min-height: 100vh;
-    padding-top: 50px;
+    min-height: 82vh;
+    padding-top: 70px;
 }
 
 #planos h2{
@@ -184,10 +215,11 @@ header .menu{
 
 .item-plano{
     flex: 1;
-    border: 5px solid #122a57;
+    border: 5px solid #04ADBF;
     margin-right: 20px;
     padding: 10px;
     max-width: 240px;
+    background-color: #FFF;  
 }
 
 .item-plano .btn{
@@ -201,11 +233,12 @@ header .menu{
     flex-direction: column;
     text-align: center;
     margin-top: 20px;
+    color: #04ADBF
 }
 
 .item-plano h3::after{
     content: "";
-    background-color: #122a57;
+    background-color: #04ADBF;
     width: 100%;
     height: 3px;
     margin-top: 20px;
@@ -229,12 +262,31 @@ header .menu{
     content: "";
     width: 10px;
     height: 10px;
-    background-color: #122a57;
+    background-color: #04ADBF;
     margin-right: 5px;
 }
 
+.formas-pgto{
+    display: flex;
+    flex-direction: column;
+    max-width: 992px;
+    margin: auto;
+    margin-bottom: 75px;
+}
+
+#pgto h2{
+    font-size: 32px;
+}
+
+.formas-pgto .itens-pgto{
+    display: flex;
+    margin: 16px 0;
+    justify-content: space-between;
+    max-width: 355px;
+}
+
 footer{
-    background-color: #122a57;
+    background-color: #04ADBF;
     height: 70px;
     display: flex;
     align-items: center;
@@ -251,12 +303,30 @@ footer .footer{
         flex-direction: column;
     }
 
+    .aviso{
+        font-size: 10px;
+        text-align: justify;
+    }
+
+    .contatos{
+        flex-direction: column;
+    }
+
+    div img{
+        max-height: 300px;
+    }
+
     .apresentacao{
         flex-direction: column-reverse;
     }
 
     .apresentacao .texto-apresentacao{
-        width: 100%;
+        width: 90%;
+        text-align: center;
+    }
+
+    .apresentacao .texto-apresentacao a{
+        display: none;
     }
 
     #quem-somos{
@@ -288,5 +358,14 @@ footer .footer{
         margin: auto;
         width: 100%;
         margin-bottom: 20px;
+    }
+
+    .formas-pgto{
+        text-align: center;
+    }
+
+    .formas-pgto .itens-pgto{
+        justify-content: center;
+        max-width: none;
     }
 } 
